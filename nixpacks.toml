@@ -1,2 +1,8 @@
+# 告诉 Nixpacks 在构建过程中执行 npm install。
+[phases.install]
+cmd = "npm install"
+
+# 定义容器启动时要执行的命令。
+# 这会执行 package.json 文件中的 "start" 脚本。
 [start]
-cmd = "n8n start"
+cmd = "npm start"
